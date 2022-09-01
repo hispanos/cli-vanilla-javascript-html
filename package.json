@@ -1,13 +1,21 @@
 {
   "name": "cli-vanilla",
-  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hispanos/cli-vanilla-javascript-html.git"
+  },
+  "homepage": "https://github.com/hispanos/cli-vanilla-javascript-html",
+  "version": "1.0.2",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "node ./src/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "javascript cli"
+  ],
   "author": "Mailer M.",
   "license": "ISC",
   "dependencies": {
