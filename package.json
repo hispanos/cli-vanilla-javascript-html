@@ -5,7 +5,7 @@
     "url": "https://github.com/hispanos/cli-vanilla-javascript-html.git"
   },
   "homepage": "https://github.com/hispanos/cli-vanilla-javascript-html",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
