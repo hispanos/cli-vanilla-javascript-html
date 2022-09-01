@@ -36,7 +36,7 @@ const queryParams = () => {
 };
 // Método que se encarga de crear el fichero en base a las preguntas realizadas
 const createFile = (data) => {
-    const path = `${pathBase}\\src`;
+    const path = `${pathBase}\\${data.projectName}\\src`;
 
     let files = [];
 
@@ -64,6 +64,9 @@ const createFile = (data) => {
             break;
     }
     
+    if (!fs.existsSync(`${pathBase}\\${data.projectName}`)) {
+        fs.mkdirSync(`${pathBase}\\${data.projectName}`, 0777);
+    }
     if (!fs.existsSync(path)) {
         fs.mkdirSync(path, 0777);
     }
@@ -84,7 +87,7 @@ const createFile = (data) => {
       - Ruta: ${chalk.blue.bold(path)}\n
       ----------------------------------\n
     `);
-    require('child_process').exec(`code "" "${pathBase}"`);
+    require('child_process').exec(`code "" "${pathBase}\\${data.projectName}"`);
     }
 }
 // IIFE (Immediately Invoked Function Expression)
